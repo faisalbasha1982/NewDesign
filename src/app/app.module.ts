@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NgModule, EventEmitter, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -37,3 +38,23 @@ export function loggerCallback(logLevel, message, piiEnabled) { console.log('cli
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule { }
+=======
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+>>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d

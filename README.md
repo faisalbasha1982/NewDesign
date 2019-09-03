@@ -1,6 +1,10 @@
 # Smarttalent
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+=======
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+>>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
 
 ## Development server
 

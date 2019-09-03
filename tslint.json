@@ -1,14 +1,37 @@
 {
   "extends": "tslint:recommended",
+<<<<<<< HEAD
   "rulesDirectory": [
     "codelyzer"
   ],
+=======
+>>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
   "rules": {
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
+<<<<<<< HEAD
       "severity": "warn"
     },
+=======
+      "severity": "warning"
+    },
+    "component-class-suffix": true,
+    "contextual-lifecycle": true,
+    "directive-class-suffix": true,
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+>>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -61,6 +84,7 @@
       "single"
     ],
     "trailing-comma": false,
+<<<<<<< HEAD
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
@@ -73,3 +97,22 @@
     "directive-class-suffix": true
   }
 }
+=======
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-output-on-prefix": true,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true
+  },
+  "rulesDirectory": [
+    "codelyzer"
+  ]
+}
+>>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
