@@ -1,0 +1,77 @@
+#headermenu ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: right; /* center ul horizontally */
+    align-items: right; /* center ul vertically (if necessary) */ 
+    width: 1020px;
+}
+
+#headermenu { 
+    text-align: center;
+}
+#headermenu ul { 
+    display: inline-block;
+    list-style-type: none;
+}
+#headermenu ul li {
+    float: right; /* or display: inline; */
+    padding: 5px;
+    margin: 5px;
+    list-style-type: none;
+}
+
+#logoimage {
+    text-align: left;
+}
+
+.container{
+    float: left;
+    display: flex;
+}
+
+#boxes {
+    float: left;
+    display:flex;
+    margin: 20px;
+    border: 1px solid blue;
+}
+
+#newboxes {
+    display:flex;
+    float:right;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+#rowbtn {
+    margin-top: 0px;
+}
+
+#talentcol5 {
+    text-align: left;
+    border: 1px solid red;
+    background: gray;
+    justify-content: center; /* center ul horizontally */
+    align-items: center; /* center ul vertically (if necessary) */ 
+    padding: 10px;
+}
+
+
+.talent1 {
+        font-size: 35px;
+        font-weight: 600;
+}
+.talent2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+h2 a{
+    color: black;
+}
+
+.button {
+    background-color: black;
+    text-align: center;
+}

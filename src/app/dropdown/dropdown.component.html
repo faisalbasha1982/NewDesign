@@ -1,0 +1,6 @@
+<select [(ngModel)]="selectedIndex" id="ddl_countries" name="ddl_countries" class="dropdown"
+    (change)="onChange($event)" ng-dropdown required="required">
+    <option *ngFor="let data of datas let i= index" [attr.data-index]="i" [value]="i">{{data}}</option>
+</select>
+<div></div>
+<div class="error">{{ errorMsg }}</div>
