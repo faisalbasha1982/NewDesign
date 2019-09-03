@@ -4,19 +4,11 @@
   "newProjectRoot": "projects",
   "projects": {
     "smarttalent": {
-<<<<<<< HEAD
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
-=======
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
->>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -25,7 +17,6 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-<<<<<<< HEAD
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -39,16 +30,6 @@
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "es5BrowserSupport": true
-=======
-            "tsConfig": "tsconfig.app.json",
-            "aot": false,
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-            "scripts": []
->>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
           },
           "configurations": {
             "production": {
@@ -99,7 +80,6 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-<<<<<<< HEAD
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
@@ -116,23 +96,12 @@
               "src/favicon.ico",
               "src/assets"
             ]
-=======
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-            "scripts": []
->>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-<<<<<<< HEAD
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
             ],
@@ -148,15 +117,6 @@
       "projectType": "application",
       "prefix": "",
       "architect": {
-=======
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        },
->>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -168,7 +128,6 @@
               "devServerTarget": "smarttalent:serve:production"
             }
           }
-<<<<<<< HEAD
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -178,15 +137,9 @@
               "**/node_modules/**"
             ]
           }
-=======
->>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
         }
       }
     }
   },
   "defaultProject": "smarttalent"
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e43aa8c834a0feddf5f63f061d35a187eb64773d
