@@ -1,0 +1,137 @@
+<div style="text-align:center" class="row">
+    <div class="col-sm-5" id="left">
+      <div class="row">
+        <div class="col-sm-12">
+            <img src="../../assets/img/Logo.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="developertext"> {{ greetings }} </div>
+              <div class="developertext">
+                Lets get you a Talent!
+              </div><br />
+            </div>  
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+            <p class="explanation">
+                Explanation how our platform is working, what
+                to expect, exclusive group, what makes us
+                different, a community feeling and how the
+                assessments are working.                  
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-7" id="right">
+      <div class="row">
+        <div class="col-sm-12" id="emptyRow">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-1"></div>
+        <div class="col-sm-5" id="headermenu">
+            <h2 >
+              <div><a target="_blank" rel="noopener" href="https://blog.angular.io/"><span class="textblack">SignUp</span><br /></a></div>
+              <div>/</div>
+              <div><a target="_blank" rel="noopener" href="https://blog.angular.io/"><span class="textblack">Log in</span></a></div>
+            </h2>
+            <div class="textOrange">to find next Project!</div>
+        </div>
+        <div class="col-sm-6"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-2">              
+          </div>
+          <div class="col-sm-7" id="textfields">
+              <div class="row">
+                <div class="col-sm-12"></div>
+              </div>
+              <form [formGroup]="supinForm" id="supinForm" (ngSubmit)="submit()">
+                  <div class="row">
+                    <div class="col-sm-12 fname">
+                        <input formControlName="firstname" name="firstname" id="firstname"
+                            maxlength="10" class="form-control" type="text" placeholder="First name" required />
+                        <!-- <div class="form-control-feedback"
+                            *ngIf="supinForm.controls.firstname.invalid && (supinForm.controls.firstname.dirty || supinForm.controls.firstname.touched || supinForm.controls.firstname.untouched ) else valid">
+                            <img src="../../assets/img/InvalidIcon.png" alt="">
+                        </div>
+                        <ng-template #valid>
+                            <img src="../../assets/img/ValidIcon.png" alt="">
+                        </ng-template>           -->
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <input formControlName="lastname" name="lastname" id="lastname" placeholder="Last name"
+                              maxlength="10" class="form-control" type="text" required />
+                          <!-- <div class="form-control-feedback"
+                              *ngIf="supinForm.controls.firstname.invalid && (supinForm.controls.firstname.dirty || supinForm.controls.firstname.touched || supinForm.controls.firstname.untouched ) else valid">
+                              <img src="../../assets/img/InvalidIcon.png" alt="">
+                          </div>
+                          <ng-template #valid>
+                              <img src="../../assets/img/ValidIcon.png" alt="">
+                          </ng-template>           -->
+                      </div>  
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <input formControlName="email" name="email" id="email" placeholder="Email Address"
+                              maxlength="10" class="form-control" type="text" required />
+                          <!-- <div class="form-control-feedback"
+                              *ngIf="supinForm.controls.firstname.invalid && (supinForm.controls.firstname.dirty || supinForm.controls.firstname.touched || supinForm.controls.firstname.untouched ) else valid">
+                              <img src="../../assets/img/InvalidIcon.png" alt="">
+                          </div>
+                          <ng-template #valid>
+                              <img src="../../assets/img/ValidIcon.png" alt="">
+                          </ng-template>           -->
+                      </div>  
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <input formControlName="password" name="password" id="password" placeholder="Password"
+                              maxlength="10" class="form-control" type="text" required />
+                          <!-- <div class="form-control-feedback"
+                              *ngIf="supinForm.controls.password.invalid && (supinForm.controls.password.dirty || supinForm.controls.password.touched || supinForm.controls.password.untouched ) else valid">
+                              <img src="../../assets/img/InvalidIcon.png" alt="">
+                          </div>
+                          <ng-template #valid>
+                              <img src="../../assets/img/ValidIcon.png" alt="">
+                          </ng-template>           -->
+                      </div>  
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-2" id="checkboxes">
+                            <input type="checkbox" formControlName="orders" name="orders" class="form-control" required />
+                      </div>
+                      <div class="col-sm-10" id="terms">
+                           <div class="terms">I agree to the General terms and conditions </div><br />
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-2" id="checkboxes">
+                            <input type="checkbox" formControlName="orders" name="orders" class="form-control" required />
+                      </div>
+                      <div class="col-sm-10" id="terms">
+                           <div class="terms">I agree to the Terms of service</div><br />
+                      </div>
+                  </div>                    
+                  <div class="row" id="buttons">
+                      <div class="col-sm-12" id="buttons">
+                          <button type="button" class="button" mdbBtn color="basic" mdbWavesEffect><div style="color:orange">Lets Go!</div></button>
+                      </div>
+                  </div>                    
+                  <div class="row">
+                    <div class="col-sm-2">                        
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="terms">Already part of the community?LogIn</div><br />
+                    </div>
+                  </div>
+              </form>
+          </div>
+          <div class="col-sm-3"></div>
+      </div>
+    </div>
+</div>

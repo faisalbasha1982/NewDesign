@@ -1,0 +1,88 @@
+#left{
+    background-color: gray;
+    text-align: center;
+    height: 100vh;  
+}
+
+#right { 
+    background-color: white;
+    height: 100vh;
+}
+
+.text {
+    font-weight: 600;
+    color: white;
+}
+
+.textblack {
+    color: black;
+}
+
+.textOrange {
+    color: orange;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#emptyRow {
+    height: 100px;
+}
+
+#headermenu .textOrange{
+    float: none;
+    clear: both;
+    text-align: left;    
+}
+#headermenu h2 div{
+    float: left;
+    width: auto;
+    padding-right: 10px;
+}
+
+#textfields input {
+    border: 0px solid black;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    margin: 18px;
+}
+
+#terms {
+    float:left;
+    color: black;
+}
+
+.terms {
+    float:left;
+    padding-top: 15px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: x-large;
+}
+.developertext {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+.explanation {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: x-large;
+}
+#buttons {
+    margin: 20px;    
+}
+.button {
+    background-color: black;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: x-large;
+}

@@ -16,12 +16,15 @@ import { DatePipe } from '@angular/common';
 import { MatProgressButtonsModule } from 'mat-progress-buttons';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './signup/signup.component';
+import { CustomersignupComponent } from './customersignup/customersignup.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 export function loggerCallback(logLevel, message, piiEnabled) { console.log('client logging' + message); }
 
 @NgModule({
-  declarations: [AppComponent,DropdownComponent],
+  declarations: [AppComponent,DropdownComponent, SignupComponent, CustomersignupComponent, SigninComponent],
   imports: [
     BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, MatAutocompleteModule, MatTooltipModule, MatInputModule,
     MatDialogModule, MatProgressSpinnerModule, MatSnackBarModule, MatProgressButtonsModule, AppRoutingModule, AutocompleteLibModule,
