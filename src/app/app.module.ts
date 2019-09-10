@@ -19,12 +19,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { CustomersignupComponent } from './customersignup/customersignup.component';
 import { SigninComponent } from './signin/signin.component';
+import { DropdownskillsComponent } from './dropdownskills/dropdownskills.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 export function loggerCallback(logLevel, message, piiEnabled) { console.log('client logging' + message); }
 
 @NgModule({
-  declarations: [AppComponent,DropdownComponent, SignupComponent, CustomersignupComponent, SigninComponent],
+  declarations: [AppComponent,DropdownComponent, SignupComponent, CustomersignupComponent, SigninComponent, DropdownskillsComponent, DashboardComponent],
   imports: [
     BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, MatAutocompleteModule, MatTooltipModule, MatInputModule,
     MatDialogModule, MatProgressSpinnerModule, MatSnackBarModule, MatProgressButtonsModule, AppRoutingModule, AutocompleteLibModule,

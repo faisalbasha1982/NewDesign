@@ -1,12 +1,19 @@
 #left{
-    background-color: gray;
+    background-color: lightgray;
     text-align: center;
-    height: 100vh;  
+}
+
+.lftrow {
+    border: 1px solid red;
+    min-height: 100vh;
+}
+
+.u-prevent-jump {
+    transition: min-height 1000s steps(1);
 }
 
 #right { 
     background-color: white;
-    height: 100vh;
 }
 
 .text {
@@ -42,7 +49,7 @@
 #textfields input {
     border: 0px solid black;
     border-bottom-width: 1px;
-    border-bottom-color: black;
+    border-bottom-color: lightgray;
     margin: 18px;
 }
 
@@ -85,4 +92,22 @@
 ::placeholder {
     text-align: center;
     font-size: x-large;
+}
+.ddlc{
+    width: 100%;
+    margin-left: 18px;
+}
+.dropdown {
+    width: 100%;
+    border: 0px solid lightgray;
+    border-bottom-width: 1px;    
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+}
+.skills {
+    text-align: center;
+    font-size: 25px;
+    color: gray;
 }

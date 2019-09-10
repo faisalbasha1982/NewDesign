@@ -1,5 +1,5 @@
 #left{
-    background-color: gray;
+    background-color: lightgray;
     text-align: center;
     height: 100vh;  
 }
@@ -86,3 +86,8 @@
     text-align: center;
     font-size: x-large;
 }
+
+.form-control-feedback {
+    float:right;
+}
+

@@ -50,36 +50,36 @@
               <div class="row">
                 <div class="col-sm-12"></div>
               </div>
-              <form [formGroup]="supinForm" id="supinform" (ngSubmit)="submit()">
+              <form [formGroup]="supinForm" id="supinForm" (ngSubmit)="submit()">
                   <div class="row">
                     <div class="col-sm-12 fname">
-                        <input formControlName="username" name="username" id="username"
+                        <input formControlName="username" name="username" class="form-control"
                             maxlength="10" class="form-control" type="text" placeholder="Username / Email" required />
-                        <div class="form-control-feedback"
-                            *ngIf="HQForm.controls.username.invalid && (HQForm.controls.username.dirty || HQForm.controls.username.touched || HQForm.controls.username.untouched ) else valid">
+                        <!-- <div class="form-control-feedback"
+                            *ngIf="supinForm.controls.username.invalid && (supinForm.controls.username.dirty || supinForm.controls.username.touched || supinForm.controls.username.untouched ) else valid">
                             <img src="../../assets/img/InvalidIcon.png" alt="">
                         </div>
                         <ng-template #valid>
                             <img src="../../assets/img/ValidIcon.png" alt="">
-                        </ng-template>          
+                        </ng-template>           -->
                     </div>
                   </div>
                   <div class="row">
                       <div class="col-sm-12">
-                          <input formControlName="password" name="password" id="password" placeholder="Password"
+                          <input formControlName="password" name="password" class="form-control" placeholder="Password"
                               maxlength="10" class="form-control" type="text" required />
-                          <div class="form-control-feedback"
-                              *ngIf="HQForm.controls.password.invalid && (HQForm.controls.password.dirty || HQForm.controls.password.touched || HQForm.controls.password.untouched ) else valid">
+                          <!-- <div class="form-control-feedback"
+                              *ngIf="supinForm.controls.password.invalid && (supinForm.controls.password.dirty || supinForm.controls.password.touched || supinForm.controls.password.untouched ) else valid">
                               <img src="../../assets/img/InvalidIcon.png" alt="">
                           </div>
                           <ng-template #valid>
                               <img src="../../assets/img/ValidIcon.png" alt="">
-                          </ng-template>          
+                          </ng-template>           -->
                       </div>  
                   </div>
                   <div class="row" id="buttons">
                       <div class="col-sm-12" id="buttons">
-                          <button type="button" class="button" mdbBtn color="basic" mdbWavesEffect><div style="color:orange">Lets Go!</div></button>
+                          <button type="button" class="button" (click)="login()" mdbBtn color="basic" mdbWavesEffect><div style="color:orange">Lets Go!</div></button>
                       </div>
                   </div>                    
                   <div class="row">

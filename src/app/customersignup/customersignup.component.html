@@ -1,4 +1,4 @@
-<div style="text-align:center" class="row">
+<div style="text-align:center" class="row lftrow u-prevent-jump">
     <div class="col-sm-5" id="left">
       <div class="row">
         <div class="col-sm-12">
@@ -9,7 +9,7 @@
           <div class="col-sm-12">
               <div class="developertext"> {{ greetings }} </div>
               <div class="developertext">
-                Lets get you a Talent!
+                Let's get you a Talent!
               </div><br />
             </div>  
       </div>
@@ -25,10 +25,6 @@
       </div>
     </div>
     <div class="col-sm-7" id="right">
-      <div class="row">
-        <div class="col-sm-12" id="emptyRow">
-        </div>
-      </div>
       <div class="row">
           <div class="col-sm-1"></div>
         <div class="col-sm-5" id="headermenu">
@@ -50,55 +46,45 @@
               </div>
               <form [formGroup]="supinForm" id="supinForm" (ngSubmit)="submit()">
                   <div class="row">
-                    <div class="col-sm-12 fname">
+                    <div class="col-sm-5 fname">
                         <input formControlName="firstname" name="firstname" id="firstname"
                             maxlength="10" class="form-control" type="text" placeholder="First name" required />
-                        <!-- <div class="form-control-feedback"
-                            *ngIf="supinForm.controls.firstname.invalid && (supinForm.controls.firstname.dirty || supinForm.controls.firstname.touched || supinForm.controls.firstname.untouched ) else valid">
-                            <img src="../../assets/img/InvalidIcon.png" alt="">
-                        </div>
-                        <ng-template #valid>
-                            <img src="../../assets/img/ValidIcon.png" alt="">
-                        </ng-template>           -->
+                     </div>
+                     <div class="col-sm-7">
+                        <input formControlName="lastname" name="lastname" id="lastname" placeholder="Last name"
+                            maxlength="10" class="form-control" type="text" required />
                     </div>
                   </div>
                   <div class="row">
-                      <div class="col-sm-12">
-                          <input formControlName="lastname" name="lastname" id="lastname" placeholder="Last name"
+                      <div class="col-sm-5 fname">
+                          <input formControlName="company" name="company" id="company"
+                              maxlength="10" class="form-control" type="text" placeholder="Company" required />
+                       </div>
+                       <div class="col-sm-7">
+                          <input formControlName="country" name="country" id="country" placeholder="Country"
                               maxlength="10" class="form-control" type="text" required />
-                          <!-- <div class="form-control-feedback"
-                              *ngIf="supinForm.controls.firstname.invalid && (supinForm.controls.firstname.dirty || supinForm.controls.firstname.touched || supinForm.controls.firstname.untouched ) else valid">
-                              <img src="../../assets/img/InvalidIcon.png" alt="">
-                          </div>
-                          <ng-template #valid>
-                              <img src="../../assets/img/ValidIcon.png" alt="">
-                          </ng-template>           -->
-                      </div>  
+                      </div>
+                    </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                        <div class="ddlc">
+                          <select id="ddl_countries" name="ddl_countries" class="dropdown"
+                          (change)="onChange($event)" ng-dropdown required="required">
+                          <option *ngFor="let data of datas let i= index" [attr.data-index]="i" class="skills" [value]="i">{{data}}</option>
+                           </select>               
+                          </div>       
+                      </div>
                   </div>
                   <div class="row">
                       <div class="col-sm-12">
                           <input formControlName="email" name="email" id="email" placeholder="Email Address"
                               maxlength="10" class="form-control" type="text" required />
-                          <!-- <div class="form-control-feedback"
-                              *ngIf="supinForm.controls.firstname.invalid && (supinForm.controls.firstname.dirty || supinForm.controls.firstname.touched || supinForm.controls.firstname.untouched ) else valid">
-                              <img src="../../assets/img/InvalidIcon.png" alt="">
-                          </div>
-                          <ng-template #valid>
-                              <img src="../../assets/img/ValidIcon.png" alt="">
-                          </ng-template>           -->
                       </div>  
                   </div>
                   <div class="row">
                       <div class="col-sm-12">
                           <input formControlName="password" name="password" id="password" placeholder="Password"
                               maxlength="10" class="form-control" type="text" required />
-                          <!-- <div class="form-control-feedback"
-                              *ngIf="supinForm.controls.password.invalid && (supinForm.controls.password.dirty || supinForm.controls.password.touched || supinForm.controls.password.untouched ) else valid">
-                              <img src="../../assets/img/InvalidIcon.png" alt="">
-                          </div>
-                          <ng-template #valid>
-                              <img src="../../assets/img/ValidIcon.png" alt="">
-                          </ng-template>           -->
                       </div>  
                   </div>
                   <div class="row">
